@@ -5,6 +5,7 @@ import Shopping from "./components/Shopping";
 import "./App.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
 
 function App() {
   return (
@@ -21,6 +22,12 @@ function App() {
           </li>
           <li>
             <a href="/contact">Contact</a>
+          </li>
+          <li>
+            <button className="btn-cart">
+              <FontAwesomeIcon icon={faCartShopping} />
+              <div className="noti-badge">10</div>
+            </button>
           </li>
         </ul>
       </header>
