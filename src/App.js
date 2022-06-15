@@ -3,12 +3,15 @@ import Contact from "./components/Contact";
 import Home from "./components/Home";
 import Shopping from "./components/Shopping";
 import "./App.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
 function App() {
   return (
     <div className="container">
       <header>
-        <div className="logo">Logo</div>
+        <div className="logo">CartWheel</div>
+
         <ul className="navbar">
           <li>
             <a href="/">Home</a>
@@ -29,7 +32,8 @@ function App() {
         </Routes>
       </BrowserRouter>
       <footer>
-        Copyright &copy;
+        <FontAwesomeIcon icon={faGithub} />
+        <span className="footer-copyright">&copy;</span>
         <a href="https://github.com/azazel-oss"> Asad Mahmood</a>
       </footer>
     </div>

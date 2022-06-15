@@ -1,6 +1,7 @@
 body {
   padding: 0;
   margin: 0;
+  font-family: "Ubuntu";
 }
 
 .container {
@@ -13,11 +14,10 @@ header,
 footer {
   flex-shrink: 0;
   background-color: #264653;
-  color: #e9c46a;
+  color: #f4a261;
   display: flex;
   padding: 1em 5em;
   font-size: 1.2rem;
-  font-family: "Ubuntu";
   font-weight: 700;
 }
 
@@ -48,7 +48,7 @@ footer a:hover {
 
 .navbar a:active,
 footer a:active {
-  color: #f4a261;
+  color: #e76f51;
 }
 
 footer {
@@ -56,6 +56,11 @@ footer {
   align-items: center;
 }
 
+.footer-copyright {
+  margin: 0 0.3em;
+}
+
 main {
   flex-grow: 1;
+  background-color: #e9c46a77;
 }
