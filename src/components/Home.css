@@ -1,0 +1,60 @@
+.main__home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-description {
+  color: #264653;
+  text-align: left;
+  font-size: 1.5rem;
+  width: 40%;
+  padding: 3em;
+}
+
+.home-description span {
+  display: block;
+  font-size: 3rem;
+  font-weight: 900;
+}
+.btn {
+  display: inline-block;
+  padding: 1em 3em;
+  border-radius: 2em;
+  text-decoration: none;
+  min-width: 7rem;
+  text-align: center;
+  margin: 0 0.5em;
+}
+
+.btn-shop-now {
+  outline: 2px solid #f4a261;
+  background-color: #f4a261;
+  color: #264653;
+}
+
+.btn-shop-now:hover,
+.btn-shop-now:focus {
+  background-color: #e76f51;
+}
+
+.btn-shop-now:hover,
+.btn-contact-us:hover {
+  transform: scale(1.1);
+  outline: none;
+}
+
+.btn-contact-us {
+  outline: 2px solid #f4a261;
+  color: #264653;
+}
+
+.btn-shop-now,
+.btn-contact-us {
+  transition: all 0.1s ease-in;
+}
+
+.btn-contact-us:hover,
+.btn-contact-us:focus {
+  background-color: #e9c46a;
+}
