@@ -1,11 +1,12 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Contact from "./Contact";
-import Home from "./Home";
-import Shopping from "./Shopping";
+import Contact from "./components/Contact";
+import Home from "./components/Home";
+import Shopping from "./components/Shopping";
+import "./App.css";
 
 function App() {
   return (
-    <div>
+    <div className="container">
       <header>
         <div className="logo">Logo</div>
         <ul className="navbar">
@@ -13,10 +14,10 @@ function App() {
             <a href="/">Home</a>
           </li>
           <li>
-            <a href="/contact">Contact</a>
+            <a href="/shopping">Shopping</a>
           </li>
           <li>
-            <a href="/shopping">Shopping</a>
+            <a href="/contact">Contact</a>
           </li>
         </ul>
       </header>
@@ -27,7 +28,10 @@ function App() {
           <Route path="/shopping" element={<Shopping />} />
         </Routes>
       </BrowserRouter>
-      <footer>Copyright &copy; Asad Mahmood</footer>
+      <footer>
+        Copyright &copy;
+        <a href="https://github.com/azazel-oss"> Asad Mahmood</a>
+      </footer>
     </div>
   );
 }
