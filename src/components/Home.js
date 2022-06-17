@@ -5,9 +5,9 @@ const Home = () => {
   return (
     <main className="main__home">
       <div className="home-description">
-        <span>Find the best *item* and at the most affordable prices.</span>
+        <span>Find the best juices and at the most affordable prices.</span>
         <br />
-        The best there ever was,the best there is, the best there ever will be.
+        The best there ever was, the best there is, the best there ever will be.
       </div>
       <div className="home-cta">
         <a href="/shopping" className="btn btn-shop-now">
