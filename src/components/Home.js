@@ -10,10 +10,10 @@ const Home = () => {
         The best there ever was, the best there is, the best there ever will be.
       </div>
       <div className="home-cta">
-        <a href="/shopping" className="btn btn-shop-now">
+        <a href="/TOP-Shopping-Cart/shopping" className="btn btn-shop-now">
           Shop now
         </a>
-        <a href="/contact" className="btn btn-contact-us">
+        <a href="/TOP-Shopping-Cart/contact" className="btn btn-contact-us">
           Get to know us
         </a>
       </div>

@@ -1,4 +1,4 @@
-import { HashRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Contact from "./components/Contact";
 import Home from "./components/Home";
 import Shopping from "./components/Shopping";
@@ -92,13 +92,13 @@ function App() {
 
         <ul className="navbar">
           <li>
-            <a href="/">Home</a>
+            <a href="/TOP-Shopping-Cart">Home</a>
           </li>
           <li>
-            <a href="/shopping">Shopping</a>
+            <a href="/TOP-Shopping-Cart/shopping">Shopping</a>
           </li>
           <li>
-            <a href="/contact">Contact</a>
+            <a href="/TOP-Shopping-Cart/contact">Contact</a>
           </li>
           <li>
             <button onClick={handleToggleCart} className="btn-cart">
@@ -114,7 +114,7 @@ function App() {
           </li>
         </ul>
       </header>
-      <HashRouter>
+      <BrowserRouter basename="/TOP-Shopping-Cart">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/contact" element={<Contact />} />
@@ -128,7 +128,7 @@ function App() {
             }
           />
         </Routes>
-      </HashRouter>
+      </BrowserRouter>
       <footer>
         <FontAwesomeIcon icon={faGithub} />
         <span className="footer-copyright">&copy;</span>
