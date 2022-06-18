@@ -1,0 +1,141 @@
+.overlay {
+  background-color: #000000bb;
+  height: 100vh;
+  position: fixed;
+  width: 100vw;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-cart {
+  display: flex;
+  flex-direction: column;
+  background-color: #e9c46a;
+  padding: 2em;
+  border-radius: 5px;
+  border: 5px solid #264653;
+  width: 50em;
+  max-height: 75vh;
+  color: #264653;
+}
+.cart-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.close {
+  cursor: pointer;
+  transition: transform 0.1s ease-in;
+}
+
+.close:hover {
+  transform: scale(1.1);
+}
+.cart-contents {
+  display: flex;
+  overflow: auto;
+}
+
+.cart-empty {
+  display: flex;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+}
+.cart-items {
+  width: 50%;
+  display: flex;
+  overflow: auto;
+  flex-direction: column;
+  gap: 1em;
+  color: #264653;
+}
+
+.cart-item {
+  display: flex;
+  gap: 1em;
+}
+
+.cart-item img {
+  max-width: 5em;
+  border-radius: 10px;
+}
+
+.item-description {
+  width: 100%;
+  padding: 1em;
+}
+
+.item-quantity {
+  display: flex;
+  gap: 1em;
+  align-items: center;
+}
+
+.item-quantity button {
+  background-color: #264653;
+  border: none;
+  padding: 0.3em 0.7em;
+  border-radius: 5px;
+  color: white;
+}
+
+.item-quantity span {
+  text-align: center;
+  width: 1em;
+}
+
+.item-price {
+  font-size: 1.3rem;
+  font-weight: lighter;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+hr {
+  border: 1px solid #264653;
+}
+
+.total span {
+  font-weight: bold;
+}
+
+.cta {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1em;
+  align-items: center;
+  padding: 0.5em;
+}
+
+.btn-clear,
+.btn-checkout {
+  color: #264653;
+  font-weight: bold;
+  transition: transform 0.1s ease-in;
+}
+
+.btn-clear {
+  background-color: lightcoral;
+}
+
+.btn-checkout {
+  background-color: lightgreen;
+}
+
+.btn-clear:hover,
+.btn-checkout:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.modal-cart button {
+  display: block;
+}
