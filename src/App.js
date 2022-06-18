@@ -8,9 +8,11 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
+import Cart from "./components/Cart";
 
 function App() {
   const [cartItems, setCartItems] = useState([]);
+  const [showModal, setShowModal] = useState(false);
   function handleAddToCart(id) {
     const product = cartItems.find((element) => element.id === id);
     if (product) {
@@ -29,19 +31,62 @@ function App() {
         return [
           ...prevState,
           {
-            id: newProduct.id,
-            price: newProduct.price,
+            ...newProduct,
             quantity: 1,
           },
         ];
       });
     }
   }
-  function handleShowCart() {
-    console.log(cartItems);
+  function handleToggleCart() {
+    setShowModal((prevState) => !prevState);
+  }
+  function handleIncreaseQuantity(id) {
+    setCartItems((prevState) => {
+      return prevState.map((item) => {
+        if (item.id === id) {
+          return {
+            ...item,
+            quantity: item.quantity + 1,
+          };
+        }
+        return item;
+      });
+    });
+  }
+  function handleClearCart() {
+    setCartItems([]);
+  }
+  function handleDecreaseQuantity(id, quantity) {
+    if (quantity === 1) {
+      setCartItems((prevState) => {
+        return prevState.filter((item) => item.id !== id);
+      });
+    } else {
+      setCartItems((prevState) => {
+        return prevState.map((item) => {
+          if (item.id === id) {
+            return {
+              ...item,
+              quantity: item.quantity - 1,
+            };
+          }
+          return item;
+        });
+      });
+    }
   }
   return (
     <div className="container">
+      {showModal && (
+        <Cart
+          cartToggler={handleToggleCart}
+          increaseQuantityHandler={handleIncreaseQuantity}
+          decreaseQuantityHandler={handleDecreaseQuantity}
+          clearCartHandler={handleClearCart}
+          cartItems={cartItems}
+        />
+      )}
       <header>
         <div className="logo">JuiceMart</div>
 
@@ -56,7 +101,7 @@ function App() {
             <a href="/contact">Contact</a>
           </li>
           <li>
-            <button onClick={handleShowCart} className="btn-cart">
+            <button onClick={handleToggleCart} className="btn-cart">
               <FontAwesomeIcon icon={faCartShopping} />
               <div className="noti-badge">
                 {cartItems.length
