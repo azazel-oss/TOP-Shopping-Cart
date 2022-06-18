@@ -47,7 +47,6 @@
   font-size: 1.1rem;
   font-weight: 900;
   margin-bottom: 1em;
-  border: none;
   background-color: #264653;
   color: #f4a261;
   transition: transform 0.1s ease-in;
@@ -56,4 +55,9 @@
 .btn-add-cart:hover {
   transform: scale(1.1);
   cursor: pointer;
+}
+
+.btn-add-cart:active {
+  background-color: #2a9d8f;
+  color: #e76f51;
 }
