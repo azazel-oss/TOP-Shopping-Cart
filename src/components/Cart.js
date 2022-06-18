@@ -53,6 +53,7 @@ const Cart = (props) => {
                         <div className="item-quantity">
                           <button
                             data-id={item.id}
+                            data-testid="decrease-quantity"
                             onClick={handleDecreaseQuantity}
                           >
                             <FontAwesomeIcon
@@ -63,6 +64,7 @@ const Cart = (props) => {
                           <span>{item.quantity}</span>
                           <button
                             data-id={item.id}
+                            data-testid="increase-quantity"
                             onClick={handleIncreaseQuantity}
                           >
                             <FontAwesomeIcon

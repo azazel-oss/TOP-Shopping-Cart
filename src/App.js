@@ -103,7 +103,7 @@ function App() {
           <li>
             <button onClick={handleToggleCart} className="btn-cart">
               <FontAwesomeIcon icon={faCartShopping} />
-              <div className="noti-badge">
+              <div data-testid="noti-badge" className="noti-badge">
                 {cartItems.length
                   ? cartItems.length > 9
                     ? "9+"
