@@ -129,6 +129,7 @@ function App() {
           />
         </Routes>
       </BrowserRouter>
+
       <footer>
         <FontAwesomeIcon icon={faGithub} />
         <span className="footer-copyright">&copy;</span>

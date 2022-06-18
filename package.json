@@ -43,7 +43,7 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "https://azazel-oss.github.io/TOP-Shopping-Cart",
+  "homepage": "https://azazel-oss.github.io/TOP-Shopping-Cart/",
   "devDependencies": {
     "gh-pages": "^4.0.0"
   }

@@ -9,7 +9,7 @@ const Shopping = (props) => {
     <main className="products-container">
       {props.products.map((product) => (
         <div key={product.id} data-id={product.id} className="product">
-          <img src={`/assets/images/${product.image}`} alt={product.name} />
+          <img src={`./assets/images/${product.image}`} alt={product.name} />
           <div className="product-info">
             <div className="product-info__name">{product.name}</div>
             <div className="product-info__price">${product.price}</div>

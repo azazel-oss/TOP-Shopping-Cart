@@ -43,7 +43,7 @@ const Cart = (props) => {
                   <div className="cart-item" key={item.id}>
                     <div className="item-image">
                       <img
-                        src={`/assets/images/${item.image}`}
+                        src={`assets/images/${item.image}`}
                         alt={item.name}
                       />
                     </div>
