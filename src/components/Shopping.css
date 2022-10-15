@@ -1,63 +1,64 @@
 .products-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  justify-items: center;
-  gap: 3em;
-  padding: 3em;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    gap: 3em;
+    padding: 3em;
 }
+
 .product {
-  border: 1px solid black;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 18em;
-  border-radius: 10px;
-  overflow: hidden;
-  gap: 1em;
-  background-color: #e9c46a;
-  color: #264653;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 18em;
+    border-radius: 10px;
+    overflow: hidden;
+    gap: 1em;
+    background-color: #e9c46a;
+    color: #264653;
 }
 
 .product img {
-  width: 18em;
-  height: 18em;
+    width: 18em;
+    height: 18em;
 }
 
 .product-info {
-  display: flex;
-  flex-direction: column;
-  padding: 0 1em;
-  width: 100%;
-  align-items: center;
-  justify-content: space-around;
+    display: flex;
+    flex-direction: column;
+    padding: 0 1em;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .product-info__name {
-  font-weight: bold;
-  font-size: 1.3rem;
+    font-weight: bold;
+    font-size: 1.3rem;
 }
 
 .product-info__price {
-  font-weight: lighter;
-  font-size: 1.9rem;
+    font-weight: lighter;
+    font-size: 1.9rem;
 }
 
 .btn-add-cart {
-  font-family: "Ubuntu";
-  font-size: 1.1rem;
-  font-weight: 900;
-  margin-bottom: 1em;
-  background-color: #264653;
-  color: #f4a261;
-  transition: transform 0.1s ease-in;
+    font-family: "Ubuntu", "sans-serif";
+    font-size: 1.1rem;
+    font-weight: 900;
+    margin-bottom: 1em;
+    background-color: #264653;
+    color: #f4a261;
+    transition: transform 0.1s ease-in;
 }
 
 .btn-add-cart:hover {
-  transform: scale(1.1);
-  cursor: pointer;
+    transform: scale(1.1);
+    cursor: pointer;
 }
 
 .btn-add-cart:active {
-  background-color: #2a9d8f;
-  color: #e76f51;
+    background-color: #2a9d8f;
+    color: #e76f51;
 }
